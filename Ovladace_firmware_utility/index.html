@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softwerové licence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ovladače, firmware a utility</h1>
+        <!-- Responzivni navigace-->
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Domů</a>
+            <a href="../Programove_a_datove_soubory/index.html">Programové a datové soubory</a>
+            <a href="../Licence/index.html">Licence a jejich typy</a>
+            <a href="../Operacni_systemy/index.html">Operační systémy</a>
+            <a href="../Ovladace_firmware_utility/index.html">Ovladače, firmware a utility</a>
+            <a href="../Emulace_virtualizace/index.html">Emulace a virtualizace</a>
+            <a href="../Cloudova_reseni/index.html">Cloudová řešení</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+</div>
+    </header>
+    <main>
+        <h1>Systémový software</h1>
+    <p>K systémovému software můžeme kromě operačních systémů zařadit ovladače hardwarových zařízení, firmware a aspoň zčásti i tzv. utility.</p>
+
+    <h2 id ="Systemovy_software">Ovladače zařízení (device drivers)</h2>
+    <p>Speciální programy, které zajišťují komunikaci OS s určitým technickým vybavením. Bez potřebného ovladače nemůže zařízení správně fungovat. Standardní ovladače pro běžná zařízení, jakými jsou flash disk, myš, klávesnice nebo digitální fotoaparáty, bývají součástí moderních OS.</p>
+    <p>Instalaci zařízení ve Windows usnadňuje standard Plug and Play (PnP - „připoj a hrej“), který zajistí automatickou detekci nově připojeného hardware a případně i automatické vyhledání potřebného ovladače. Není-li driver nalezen přímo v OS, musí být použit externí instalátor ovladače z disku dodaného se zařízením (např. z instalačního CD k tiskárně), nebo stažený z internetových stránek, nejlépe přímo od výrobce. Nevhodně zvolený ovladač může v krajním případě způsobit nefunkčnost zařízení, někdy i celého OS.</p>
+
+    <h2 id ="firmware">Firmware</h2>
+    <p>Programové vybavení, které slouží pro řízení nějakého vestavěného systému (embedded system). Firmware řídí například kalkulačky, počítačové komponenty (pevný disk, router…), mobilní telefon, digitální fotoaparát atd.</p>
+    <p>Dříve byla aktualizace firmwaru realizována nahrazením paměťového média obsahujícího firmware (např. výměna ROM paměti), dnes může být novější verze firmware přepsána díky používaným flash pamětem. Základním firmwarem v počítači je BIOS (Basic Output-Input System), který zajišťuje především start počítače a umožňuje konfiguraci základní desky i připojeného hardware.</p>
+
+    <h2 id ="utility">Utility</h2>
+    <p>Jsou menší pomocné programy, které umožňují vykonávat servisní operace potřebné k fungování počítače. Patří k nim komprimační programy, diagnostické a testovací programy, utility pro kontrolu a optimalizaci operačního systému, různé konverzní (převodní) programy, které umí přehledně zobrazit obrázky, převést je z jednoho formátu na jiný atd.</p>
+    <p>Řada utilit je integrální součástí OS. Příkladem může být Správce úloh ve Windows (Task Manager), který umožňuje nejen správu spuštěných programů a služeb, ale i sledování využití systémových zdrojů (procesoru, paměti). Dalšími užitečnými utilitami jsou nástroje pro defragmentaci (defrag) nebo kontrolu disku (chkdsk). Některé utility lze spouštět z příkazového řádku (ping, ipconfig apod.).</p>
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            <a href="https://www.sspu-opava.cz/" target="_blank">
+                <img src="https://www.sspu-opava.cz/static/img/core-img/skola-logo.png" alt="Logo školy">
+            </a>
+        </div>
+        <div>&copy; Copyright 2026, Pavel Gebauer, IT1</div>
+    </footer>
+    
+<script src="../js/main.js"></script>
+</body>
+
+</html>

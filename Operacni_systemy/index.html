@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operační systémy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Operační systémy</h1>
+        <!-- Responzivni navigace-->
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Domů</a>
+            <a href="../Programove_a_datove_soubory/index.html">Programové a datové soubory</a>
+            <a href="../Licence/index.html">Licence a jejich typy</a>
+            <a href="../Operacni_systemy/index.html">Operační systémy</a>
+            <a href="../Ovladace_firmware_utility/index.html">Ovladače, firmware a utility</a>
+            <a href="../Emulace_virtualizace/index.html">Emulace a virtualizace</a>
+            <a href="../Cloudova_reseni/index.html">Cloudová řešení</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+</div>
+    </header>
+    <main>
+
+        <p>
+        Programové vybavení (software) je podmínkou využití technického vybavení (hardware).
+        V raných dobách počítačové éry byly programy vytvářeny vždy pro konkrétní hardware.
+        S rozvojem sériové výroby počítačů vznikla potřeba systémových programů, které by
+        zajišťovaly základní operace s hardwarem a poskytly prostředí pro běh aplikací.
+    </p>
+
+    <h2 id ="operacni_system">Operační systém</h2>
+
+    <p>
+        Základním programovým vybavením počítačů jsou operační systémy
+        (<strong>OS – Operating System</strong>). Jejich hlavní funkcí je řízení hardware.
+    </p>
+
+    <h3>Jádro operačního systému</h3>
+
+    <p>
+        Řízení hardware zajišťuje jádro systému, které obsahuje subsystémy pro správu:
+    </p>
+
+    <ul>
+        <li>procesoru</li>
+        <li>paměti</li>
+        <li>diskových médií</li>
+        <li>dalších zařízení</li>
+    </ul>
+
+    <p>
+        Jádro využívá ovladače zařízení (<em>drivers</em>), pomocí nichž zpřístupňuje
+        technické vybavení běžícím procesům.
+    </p>
+
+    <h3 id ="Aplikacni">Aplikační a uživatelské rozhraní</h3>
+
+    <p>
+        Nedílnou součástí operačních systémů je aplikační rozhraní
+        (<strong>API - Application Programming Interface</strong>), které poskytuje
+        programátorům nástroje pro vývoj aplikací.
+    </p>
+
+    <p>
+        Uživatelské rozhraní slouží k ovládání OS a spouštění aplikací:
+    </p>
+
+    <ul>
+        <li><strong>CLI</strong> příkazový řádek (starší systémy)</li>
+        <li><strong>GUI</strong> grafické uživatelské rozhraní (moderní systémy)</li>
+    </ul>
+
+    <h2 >Historie operačních systémů</h2>
+
+    <p>
+        Mezi první moderní operační systémy patří víceúlohový a víceuživatelský
+        systém <strong>UNIX</strong>, používaný již od 70. let.
+    </p>
+
+    <p>
+        V 80. letech si konkurovaly zejména:
+    </p>
+
+    <ul>
+        <li><strong>MS-DOS</strong> (Microsoft, IBM PC)</li>
+        <li><strong>Mac OS</strong> (Apple, průkopník grafického rozhraní)</li>
+    </ul>
+
+    <p>
+        Na grafickém rozhraní byl později založen i systém <strong>MS Windows</strong>,
+        který dominoval zejména na přelomu tisíciletí.
+        Současně rostla popularita otevřeného systému <strong>Linux</strong>,
+        vytvořeného Linusem Torvaldsem.
+    </p>
+
+    <h2 id ="Rozdeleni">Rozdělení operačních systémů</h2>
+
+    <p>
+        Současné operační systémy rozdělujeme podle typu zařízení:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Serverové systémy</strong>:
+            MS Windows Server, Linux, Unix
+        </li>
+        <li>
+            <strong>Osobní počítače</strong>:
+            MS Windows, Linux Ubuntu, macOS
+        </li>
+        <li>
+            <strong>Mobilní zařízení</strong>:
+            Android, iOS, Windows Phone, Symbian
+        </li>
+        <li>
+            <strong>RTOS (Real-Time Operating System)</strong>:
+            systémy reálného času pro řízení a měření
+        </li>
+    </ul>
+
+    <h3>Systémy reálného času (RTOS)</h3>
+
+    <p>
+        RTOS zajišťují provoz „chytrých“ zařízení, například robotických kamer,
+        měřicích přístrojů nebo průmyslových řídicích jednotek.
+        Na rozdíl od běžných systémů musí RTOS pracovat bez prodlevy
+        a s vysokou spolehlivostí v reálném čase.
+    </p>
+
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            <a href="https://www.sspu-opava.cz/" target="_blank">
+                <img src="https://www.sspu-opava.cz/static/img/core-img/skola-logo.png" alt="Logo školy">
+            </a>
+        </div>
+        <div>&copy; Copyright 2026, Pavel Gebauer, IT1</div>
+    </footer>
+    
+<script src="../js/main.js"></script>
+</body>
+
+</html>
