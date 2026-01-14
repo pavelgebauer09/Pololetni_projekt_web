@@ -1,125 +1,128 @@
+/* Import fontu Lato s vyváženými tloušťkami */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --text-color: #2c3e50; /* Trochu tmavší pro lepší čitelnost */
+    --light-border: rgba(0, 0, 0, 0.08);
+}
 
 body {
-    background-color: antiquewhite;
-    background-image: url(../img/pngtree-blue-background-and-wallpaper-download-victor-for-free-vector-image_7715968.jpg);
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; /* Standardní moderní tloušťka */
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
 }
 
-header{
-    max-width: 1200px;
-    margin: 10px auto;
-    background-color: aqua;
-    text-align: center;
-    padding-top: 30px;
-}
-h1{
-    color: rgb(0, 0, 0);
-    font-size: 3em;
-}
-
-h1, h2, h3{
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 200;
-
-}
-
-main {
-    max-width: 1160px;
-    margin: 20px auto;
-    border: 1px solid #888;
-    padding: 20px;
-    background-color: rgba(255, 255 ,255 ,0.9);
-}
-
-h2 {
-    background-color: azure;
-
-}
-
-table, th, td {
-    margin: 0 auto;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-table{
-    border: 3px solid black;
-}
-
-th{
-    padding: 10px;
-}
-
-.bgRed {
-    background-color: rgba(255, 0 ,0 ,0.5);
-}
-thead{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-}
-.bgDarkRed{
-    background-color: darkred;
-}
-.bgDarkGreen{
-    background-color: darkgreen;
-}
-.bgGreen {
-    background-color: rgba(0, 255 ,0 ,0.5);
-}
-
-.fgWhite{
-    color: white;
-}
-
-/*css navigace*/
+/* --- NAVIGACE (Burgřík jen na mobilu) --- */
 .topnav {
-        overflow: hidden;
-        background-color: #333;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700; /* Menu nechte tučnější, aby vyniklo */
+    transition: 0.3s;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    color: var(--primary-color);
+    background-color: #f8f9fa;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .topnav .icon {
-  display: none;
+    display: none; /* Schová ikonu na desktopu */
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+/* --- RESPONSIVE MENU --- */
+@media screen and (max-width: 768px) {
+    .topnav { display: block; }
+    .topnav a:not(:first-child) { display: none; }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid var(--light-border);
+    }
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
+/* --- HLAVNÍ OBSAH --- */
+header {
+    max-width: 1200px;
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700; /* Pevný, ale ne přehnaný nadpis */
+    font-size: 3rem;
+    margin: 0;
+    color: #1a1a1a;
+    letter-spacing: -1px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto 60px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* --- TABULKA (Čitelná a moderní) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 700;
+    padding: 15px;
     text-align: left;
-  }
+    border-bottom: 2px solid #dee2e6;
 }
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Barvy stavů v tabulce - zachování tvých tříd */
+.bgRed { background-color: rgba(231, 76, 60, 0.15) !important; color: #c0392b; }
+.bgGreen { background-color: rgba(46, 204, 113, 0.15) !important; color: #27ae60; }
+.bgDarkRed { background-color: #c0392b !important; color: white; font-weight: 700; }
+.bgDarkGreen { background-color: #27ae60 !important; color: white; font-weight: 700; }
+
+.fgWhite { color: white; }
