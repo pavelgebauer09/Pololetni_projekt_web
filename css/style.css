@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400; 
     line-height: 1.6;
     color: var(--text-color);
@@ -24,6 +24,7 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
+    border-radius: 4px;
 }
 
 .topnav a {
@@ -86,11 +87,11 @@ h1 {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 30px auto 60px;
     padding: 40px;
     background: rgba(255, 255, 255, 0.98);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
@@ -123,10 +124,18 @@ td {
 }
 
 
-.bgRed { background-color: rgba(231, 76, 60, 0.15) !important; color: #c0392b; }
-.bgGreen { background-color: rgba(46, 204, 113, 0.15) !important; color: #27ae60; }
-.bgDarkRed { background-color: #c0392b !important; color: white; font-weight: 700; }
-.bgDarkGreen { background-color: #27ae60 !important; color: white; font-weight: 700; }
+.bgRed {
+     background-color: rgba(231, 76, 60, 0.15) !important; color: #c0392b; 
+    }
+.bgGreen { 
+    background-color: rgba(46, 204, 113, 0.15) !important; color: #27ae60; 
+}
+.bgDarkRed { 
+    background-color: #c0392b !important; color: white; font-weight: 700; 
+}
+.bgDarkGreen {
+     background-color: #27ae60 !important; color: white; font-weight: 700; 
+    }
 
 .fgWhite { color: white; }
 
