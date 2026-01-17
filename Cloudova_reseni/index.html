@@ -11,7 +11,12 @@
         h2 {
             color: midnightblue;
         }
-    </style>
+        .image-box img {
+            max-width: 25%;  
+            height: auto;    
+            object-fit: contain;
+        }
+        </style>
 </head>
 
 <body>
@@ -55,9 +60,9 @@
         <li><strong>Uživatelské aplikace:</strong> Google Apps, Microsoft Office365, Adobe Creative Cloud.</li>
         <li><strong>Systémy přes prohlížeč:</strong> eyeOS.</li>
     </ul>
-    <div style="justify-content: space-evenly; display: flex; max-height: 250px;">
+    <div class="container image-box" style="justify-content: center; display: flex; align-items: center;gap: 20px;">
         <img src="../img/iCloud-Logo.jpg" alt="Logo iCloud">
-        <img src="../img/Google_Drive_Logo_512px.webp" alt="Logo Google Drive">
+        <img src="../img/Google_Drive_Logo_512px.webp" alt="Logo Google Drive" >
     </div>
     <h2>Distribuční modely</h2>
     <p>Podle obsahu i způsobu nabídky cloudové služby rozlišujeme tyto modely:</p>
