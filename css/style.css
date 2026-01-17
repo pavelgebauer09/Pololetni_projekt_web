@@ -1,9 +1,9 @@
-/* Import fontu Lato s vyváženými tloušťkami */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
     --primary-color: #3498db;
-    --text-color: #2c3e50; /* Trochu tmavší pro lepší čitelnost */
+    --text-color: #2c3e50; 
     --light-border: rgba(0, 0, 0, 0.08);
 }
 
@@ -11,14 +11,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-weight: 400; /* Standardní moderní tloušťka */
+    font-weight: 400; 
     line-height: 1.6;
     color: var(--text-color);
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     background-attachment: fixed;
 }
 
-/* --- NAVIGACE (Burgřík jen na mobilu) --- */
+
 .topnav {
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -33,7 +33,7 @@ body {
     padding: 18px 25px;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 700; /* Menu nechte tučnější, aby vyniklo */
+    font-weight: 700; 
     transition: 0.3s;
 }
 
@@ -48,26 +48,29 @@ body {
 }
 
 .topnav .icon {
-    display: none; /* Schová ikonu na desktopu */
+    display: none; 
 }
 
-/* --- RESPONSIVE MENU --- */
+
 @media screen and (max-width: 768px) {
     .topnav { display: block; }
     .topnav a:not(:first-child) { display: none; }
     .topnav a.icon {
+        top:-62px;
+        position: relative;
         float: right;
         display: block;
     }
     .topnav.responsive a {
         float: none;
+        top: unset;
         display: block;
         text-align: left;
         border-bottom: 1px solid var(--light-border);
     }
 }
 
-/* --- HLAVNÍ OBSAH --- */
+
 header {
     max-width: 1200px;
     margin: 50px auto 20px;
@@ -75,7 +78,7 @@ header {
 }
 
 h1 {
-    font-weight: 700; /* Pevný, ale ne přehnaný nadpis */
+    font-weight: 700; 
     font-size: 3rem;
     margin: 0;
     color: #1a1a1a;
@@ -98,7 +101,7 @@ h2 {
     color: #444;
 }
 
-/* --- TABULKA (Čitelná a moderní) --- */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -119,10 +122,11 @@ td {
     border-bottom: 1px solid #eee;
 }
 
-/* Barvy stavů v tabulce - zachování tvých tříd */
+
 .bgRed { background-color: rgba(231, 76, 60, 0.15) !important; color: #c0392b; }
 .bgGreen { background-color: rgba(46, 204, 113, 0.15) !important; color: #27ae60; }
 .bgDarkRed { background-color: #c0392b !important; color: white; font-weight: 700; }
 .bgDarkGreen { background-color: #27ae60 !important; color: white; font-weight: 700; }
 
 .fgWhite { color: white; }
+

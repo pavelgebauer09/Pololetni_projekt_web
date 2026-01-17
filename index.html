@@ -11,37 +11,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
-    .rubik-font> {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.h3{
-    font-family: "Rubik";
-    font-weight: 500;
-}
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
-        .container div {
-            padding: 10px;
-            margin: 5px;
-            background-color: rgba(100, 100, 100, 0.8);
-            width: 30%;
-        }
-        @media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-    .container div{
-        width: auto;
+    .rubik-font {
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
     }
-}
+    .h3 {
+        font-family: "Rubik";
+        font-weight: 500;
+    }
+    .container{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        
+    }
+
+
+  .container-item {
+        width: 50%;
+        padding: 20px;
+        margin:14px;
+        background-color: rgba(100, 100, 100, 0.1);
+        width: 29%;
+        min-width: 301px;
+        box-sizing: border-box; 
+        
+    }
+    .container-item:hover {
+        background-color: rgba(150, 150, 150, 0.8);
+    }
+    .container-item div {
+        padding: 30px;
+        margin: 60px;
+        background-color: rgba(100, 100, 100, 0.8);
+        width: 30%;
+        box-sizing: border-box; 
+    }
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+        .container div{
+            width: auto;
+        }
+    }
     </style>
     
 </head>
@@ -68,62 +84,64 @@
         <h2>Vítejte</h2>
         <p>Vyberte si dané téma, které vás zajímá</p>
         <div class="container">
-            <a href="./Programove_a_datove_soubory/index.html">
-            <h3>Programové a datové soubory</h3>
-            </a>
-            <ul>
-                <li><a href="">podnadpis 1</a></li>
-                <li><a href="">podnadpis 2</a></li>
-                <li><a href="">podnadpis 3</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="./Licence/index.html">
-                <h3>Softwarove licence</h3>
-            </a>
-            <ul>
-                <li><a href="./Licence/index.html#licence_typy">Licence a jejich typy</a></li>
-                <li><a href="./Licence/index.html#srovnani-licenci">Srovnani licenci</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="">
-                <h3>Operační systémy</h3>
-            </a>
-            <ul>
-                <li><a href="./Operacni_systemy/index.html#operacni_systemy">Operační systémy</a></li>
-                <li><a href="./Operacni_systemy/index.html#Aplikacni">Aplikační a uživatelske rozhraní</a></li>
-                <li><a href="./Operacni_systemy/index.html#Rozdeleni">Rozdělení operačních systémů</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="./Ovladace_firmware_utility/index.html">
-                <h3>Ovladače, firmware a utility</h3>
-            </a>
-            <ul>
-                <li><a href="./Ovladace_firmware_utility/index.html#Systemovy_software">Ovladače a drivery</a></li>
-                <li><a href="./Ovladace_firmware_utility/index.html#firmware">Firmware</a></li>
-                <li><a href="./Ovladace_firmware_utility/index.html#utility">Utiliy</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="./Emulace_virtualizace/index.html">
-                <h3>Emulace a virtualizace</h3>
-            </a>
-            <ul>
-                <li><a href="">podnadpis 1</a></li>
-                <li><a href="">podnadpis 2</a></li>
-                <li><a href="">podnadpis 3</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="./Cloudova_reseni/index.html">
-                <h3>Cloudová řešení</h3>
-            </a>
-            <ul>
-                <li><a href="./Cloudova_reseni/index.html#Cloud_c">Cloud Computing</a></li>
-                <li><a href="./Cloudova_reseni/index.html#Distribucni">Distribuční modely</a></li>
-            </ul>
+            <div class="container-item">
+                <a href="./Programove_a_datove_soubory/index.html">
+                    <h3>Programové a datové soubory</h3>
+                </a>
+                <ul>
+                    <li><a href="./Programove_a_datove_soubory/index.html#soubory">Soubory</a></li>
+                    <li><a href="./Programove_a_datove_soubory/index.html#system">Systém adresářů</a></li>
+                </ul>
+            </div>
+            <div class="container-item">
+                <a href="./Licence/index.html">
+                    <h3>Softwarove licence</h3>
+                </a>
+                <ul>
+                    <li><a href="./Licence/index.html#licence_typy">Licence a jejich typy</a></li>
+                    <li><a href="./Licence/index.html#srovnani-licenci">Srovnani licenci</a></li>
+                </ul>
+            </div>
+            <div class="container-item">
+                <a href="">
+                    <h3>Operační systémy</h3>
+                </a>
+                <ul>
+                    <li><a href="./Operacni_systemy/index.html#operacni_systemy">Operační systémy</a></li>
+                    <li><a href="./Operacni_systemy/index.html#Aplikacni">Aplikační a uživatelske rozhraní</a></li>
+                    <li><a href="./Operacni_systemy/index.html#Rozdeleni">Rozdělení operačních systémů</a></li>
+                </ul>
+            </div>
+            <div class="container-item">
+                <a href="./Ovladace_firmware_utility/index.html">
+                    <h3>Ovladače, firmware a utility</h3>
+                </a>
+                <ul>
+                    <li><a href="./Ovladace_firmware_utility/index.html#Systemovy_software">Ovladače a drivery</a></li>
+                    <li><a href="./Ovladace_firmware_utility/index.html#firmware">Firmware</a></li>
+                    <li><a href="./Ovladace_firmware_utility/index.html#utility">Utiliy</a></li>
+                </ul>
+            </div>
+            <div class="container-item">
+                <a href="./Emulace_virtualizace/index.html">
+                    <h3>Emulace a virtualizace</h3>
+                </a>
+                <ul>
+                    <li><a href="./Emulace_virtualizace/index.html#emulator">Emulátor</a></li>
+                    <li><a href="./Emulace_virtualizace/index.html#virtualizace">Virtualizace</a></li>
+                    <li><a href="./Emulace_virtualizace/index.html#virtualni">Virtuální stroj</a></li>
+                </ul>
+            </div>
+            <div class="container-item">
+                <a href="./Cloudova_reseni/index.html">
+                    <h3>Cloudová řešení</h3>
+                </a>
+                <ul>
+                    <li><a href="./Cloudova_reseni/index.html#Cloud_c">Cloud Computing</a></li>
+                    <li><a href="./Cloudova_reseni/index.html#Distribucni">Distribuční modely</a></li>
+                </ul>
+            </div>
+    
         </div>
     </main>
     <footer>
